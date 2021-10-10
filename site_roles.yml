@@ -6,7 +6,7 @@
   roles:
     - common
     - mvn
-  
+
 - name: Poduction server config
   hosts: prod
   become: "yes"
@@ -14,4 +14,3 @@
   roles:
     - common
     - tomcat
-    
