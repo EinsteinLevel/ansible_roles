@@ -1,2 +1,12 @@
 ---
 # tasks file for common
+- name: install packages
+  apt:
+    name: {{item}} 
+    state: present
+  with_items:
+    - mc
+    - htop
+    - locate
+    - net-tools
+    - wget
