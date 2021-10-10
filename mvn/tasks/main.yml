@@ -1,7 +1,7 @@
 ---
 - name: Ensure Maven service packages is present
   apt: 
-    name: {{item}}
+    name: {{ item }}
     state: present
   with_items:
     - defauilt-jdk
