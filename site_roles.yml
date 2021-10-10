@@ -1,7 +1,7 @@
 ---
 - name: Build Server config
   hosts: build
-  become: yes
+  become: "yes"
 
   roles:
     - common
@@ -9,7 +9,7 @@
   
 - name: Poduction server config
   hosts: prod
-  become: yes
+  become: "yes"
 
   roles:
     - common
