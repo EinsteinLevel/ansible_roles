@@ -17,6 +17,6 @@
 # tasks file for mvn
 
 - name: Build war file
-  shell: "mvn package /mvn"
+  shell: mvn package
   args:
     chdir: /mvn
