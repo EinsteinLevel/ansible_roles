@@ -11,6 +11,6 @@
 
 - name: "Копирование файла war"
   synchronize:
-    src: /mvn/hello-1.0.war
+    src: /mvn/target/hello-1.0.war
     dest: {{destination_folder}}
   delegate_to: "{{groups['build'][0]}}"
