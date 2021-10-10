@@ -1,6 +1,6 @@
 ---
 - name: Ensure Maven service packages is present
-  apt: 
+  apt:
     name: {{item}}
     state: present
   with_items:
@@ -12,8 +12,8 @@
   git:
     repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
     dest: /mvn/
-    clone: yes
-    update: yes
+    clone: "yes"
+    update: "yes"
 # tasks file for mvn
 
 - name: Build war file
