@@ -18,4 +18,5 @@
 
 - name: Build war file
   shell: "mvn package /mvn"
-  
+  args:
+    chdir: /mvn
