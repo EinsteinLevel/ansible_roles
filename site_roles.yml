@@ -1,0 +1,17 @@
+---
+- name: Build Server config
+  hosts: build
+  become: yes
+
+  roles:
+    - common
+    - mvn
+  
+- name: Poduction server config
+  hosts: prod
+  become: yes
+
+  roles:
+    - common
+    - tomcat
+    
