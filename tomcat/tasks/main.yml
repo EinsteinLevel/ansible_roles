@@ -2,7 +2,7 @@
 # tasks file for tomcat
 - name: Ensure Tomcat service package is present
   apt:
-    name: {{item}}
+    name: "{{item}}"
     state: present
   with_items:
     - default-jdk
@@ -12,5 +12,5 @@
 - name: "Копирование файла war"
   synchronize:
     src: /mvn/target/hello-1.0.war
-    dest: {{destination_folder}}
+    dest: "{{destination_folder}}"
   delegate_to: "{{groups['build'][0]}}"
